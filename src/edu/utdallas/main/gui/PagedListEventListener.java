@@ -75,6 +75,7 @@ final class PagedListEventListener extends MouseAdapter implements ItemListener,
 				final int newPageSize = Integer.parseInt(rawPageSize);
 				if(newPageSize > 0) {
 					theList.setPageSize(newPageSize);
+					itemsPerPageButton.setLabel(newPageSize + " item(s) per page");
 					theList.display();
 				}
 			}
